@@ -1,0 +1,111 @@
+body {
+  background: #2684b2;
+}
+
+.App {
+  justify-content: center;
+  display: flexbox;
+  background-color: #4abdd4;
+  width: 80%;
+  margin: 40px auto;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 80px;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 10px;
+  box-shadow: darkgrey;
+  // border-radius: 10px;
+  -webkit-box-shadow: 6px 6px 9px -5px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 6px 6px 9px -5px rgba(0, 0, 0, 0.75);
+  box-shadow: 6px 6px 9px -5px rgba(0, 0, 0, 0.75);
+}
+
+#to-do-form {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: nowrap;
+  border-top-right-radius: 30px;
+  border-top-left-radius: 10px;
+  background-color: #db7b77;
+  height: 80px;
+  align-items: center;
+
+  .title {
+    font-weight: 600;
+    color: #1cd2f7;
+
+    .titleDo {
+      color: white;
+    }
+  }
+
+  img {
+    margin: 5px;
+  }
+
+  input {
+    padding-left: 10px;
+    background-color: #e6fdfd;
+    border: 0;
+    width: 70%;
+    height: 40px;
+    font-size: 15px;
+    border-radius: 10px;
+    color: #154067;
+    font-weight: 700;
+    -webkit-box-shadow: 6px 6px 9px -5px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 6px 6px 9px -5px rgba(0, 0, 0, 0.75);
+    box-shadow: 6px 6px 9px -5px rgba(0, 0, 0, 0.75);
+    margin: 10px;
+  }
+
+  input:focus,
+  button:focus {
+    outline: none;
+    -webkit-box-shadow: 6px 6px 9px -5px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 6px 6px 9px -5px rgba(0, 0, 0, 0.75);
+    box-shadow: 6px 6px 9px -5px rgba(0, 0, 0, 0.75);
+  }
+
+  input::placeholder {
+    color: #2684b2;
+    font-weight: 200;
+    font-size: 11px;
+  }
+
+  button {
+    height: 40px;
+    margin-right: 5px;
+    border-radius: 5px;
+    width: 70px;
+    border: 0;
+    font-size: 12px;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bolder;
+    background-color: #154067;
+
+    -webkit-box-shadow: 6px 6px 9px -5px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 6px 6px 9px -5px rgba(0, 0, 0, 0.75);
+    box-shadow: 6px 6px 9px -5px rgba(0, 0, 0, 0.75);
+  }
+}
+
+// #to-do-form
+
+// #to-do-form input::placeholder {
+//   color: #2684b2;
+//   font-weight: 200;
+// }
+
+// #to-do-form
+
+@media only screen and (max-device-width: 600px) {
+  .title {
+    display: none;
+  }
+
+  img {
+    margin: 0;
+  }
+
+}
