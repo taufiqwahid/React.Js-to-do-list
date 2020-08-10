@@ -18,33 +18,25 @@
   p {
     margin: 10px;
     padding: 5px;
-    // display: inline;
-    // background-color: #11aaaa;
+    display: flex;
+    align-items: center;
     text-align: justify;
-    // position: relative;
 
     .itemText {
       width: 90%;
-      font-weight: 500;
       color: black;
       outline: none;
       border: none;
       // text-decoration: line-through;
       background-color: #e6fdfd;
-
     }
 
 
     .trash {
       cursor: pointer;
-      // position: absolute;
       font-size: 15px;
       margin-left: 17px;
-      // right: 100px;
-      // right: 5px;
-      // bottom: 12px;
       color: #db7b77;
-      // font-size: 18px;
     }
 
     .checkbox {
@@ -55,51 +47,51 @@
 
 }
 
-@media only screen and (max-device-width: 1100px) {
-  .itemText {
-    width: 88% !important;
+// @media only screen and (max-device-width: 1100px) {
+//   .itemText {
+//     width: 88% !important;
 
-  }
-}
+//   }
+// }
 
-@media only screen and (max-device-width: 936px) {
-  .itemText {
-    width: 86% !important;
+// @media only screen and (max-device-width: 936px) {
+//   .itemText {
+//     width: 86% !important;
 
-  }
-}
+//   }
+// }
 
-@media only screen and (max-device-width: 836px) {
-  .itemText {
-    width: 84% !important;
+// @media only screen and (max-device-width: 836px) {
+//   .itemText {
+//     width: 84% !important;
 
-  }
-}
+//   }
+// }
 
-@media only screen and (max-device-width: 736px) {
-  .itemText {
-    width: 81% !important;
+// @media only screen and (max-device-width: 736px) {
+//   .itemText {
+//     width: 81% !important;
 
-  }
-}
+//   }
+// }
 
-@media only screen and (max-device-width: 636px) {
-  .itemText {
-    width: 70% !important;
+// @media only screen and (max-device-width: 636px) {
+//   .itemText {
+//     width: 70% !important;
 
-  }
-}
+//   }
+// }
 
-@media only screen and (max-device-width: 436px) {
-  .itemText {
-    width: 62% !important;
+// @media only screen and (max-device-width: 436px) {
+//   .itemText {
+//     width: 62% !important;
 
-  }
-}
+//   }
+// }
 
-@media only screen and (max-device-width: 336px) {
-  .itemText {
-    width: 56% !important;
+// @media only screen and (max-device-width: 336px) {
+//   .itemText {
+//     width: 56% !important;
 
-  }
-}
+//   }
+// }
