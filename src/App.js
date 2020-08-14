@@ -8,9 +8,14 @@ import ListItems from "./component/ListItems.js";
 import logo from "./images/To do list-bro.png";
 
 //FONTAWESOME
+
 import { library } from "@fortawesome/fontawesome-svg-core";
-import { faTrash } from "@fortawesome/free-solid-svg-icons";
-library.add(faTrash);
+import {
+  faTrash,
+  faCheckCircle,
+  faSpinner,
+} from "@fortawesome/free-solid-svg-icons";
+library.add(faTrash, faCheckCircle, faSpinner);
 
 class App extends Component {
   constructor(props) {
@@ -26,9 +31,11 @@ class App extends Component {
     this.addItem = this.addItem.bind(this);
     this.deleteItem = this.deleteItem.bind(this);
     this.updateItem = this.updateItem.bind(this);
+    this.doneItem = this.doneItem.bind(this);
+    this.processItem = this.processItem.bind(this);
   }
 
-  handleInput(e) {
+  handleInput() {
     const value = document.getElementById("value").value;
     this.setState({
       currentItem: {
@@ -74,6 +81,29 @@ class App extends Component {
     });
   }
 
+  processItem(key) {
+    //SPINNER
+    const spinner = document.getElementById(`spinner${key}`);
+    const check = document.getElementById(`check${key}`);
+
+    spinner.style.display = "none";
+    check.style.display = "inline";
+    // alert("BEING DOING");
+    window.confirm("COMPLETED");
+  }
+
+  doneItem(key) {
+    //CHECK CIRCLE
+    const spinner = document.getElementById(`spinner${key}`);
+    const check = document.getElementById(`check${key}`);
+    spinner.style.display = "inline";
+    check.style.display = "none";
+    this.setState({
+      todo: { progres: false, done: true },
+    });
+    window.confirm("BEING DOING");
+  }
+
   render() {
     return (
       <div className="App">
@@ -98,6 +128,8 @@ class App extends Component {
           items={this.state.items}
           deleteItem={this.deleteItem}
           updateItem={this.updateItem}
+          doneItem={this.doneItem}
+          processItem={this.processItem}
         ></ListItems>
       </div>
     );

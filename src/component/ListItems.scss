@@ -24,18 +24,36 @@
 
     .itemText {
       width: 90%;
+      margin: 0 10px;
       color: black;
       outline: none;
       border: none;
+
       // text-decoration: line-through;
       background-color: #e6fdfd;
+      // background-color: #000000;
+      // word-wrap: break-word;
+      // word-break: break-all;
     }
 
+    .checkCircle {
+      cursor: pointer;
+      font-size: 15px;
+      color: blue;
+      margin: 0 2px;
+    }
+
+    .spinner {
+      cursor: pointer;
+      font-size: 15px;
+      color: blue;
+      margin: 0 2px;
+    }
 
     .trash {
       cursor: pointer;
       font-size: 15px;
-      margin-left: 17px;
+      // margin-left: 17px;
       color: #db7b77;
     }
 
